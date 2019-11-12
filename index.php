@@ -25,25 +25,17 @@
 	  </div>
 	</nav>
 	<div class="container">
-		<form style="border: 1px solid black; margin-top: 50px; padding: 20px;">
+		<form method="post" action="registra_tarefa.php" style="border: 1px solid black; margin-top: 50px; padding: 20px;">
 		  <div class="form-group">
 		    <label for="exampleFormControlInput1">Tarefa</label>
-		    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Estudar / Correr / Malhar etc...">
+		    <input type="text" name="tarefa" class="form-control" id="exampleFormControlInput1" placeholder="Estudar / Correr / Malhar etc...">
 		  </div>
 		  <div class="form-group">
 		    <label for="exampleFormControlTextarea1">Descrição da tarefa</label>
-		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+		    <textarea name="descricao" class="form-control" id="exampleFormControlTextarea1" rows="3">
+		    </textarea>
 		  </div>
-		  <div class="form-group">
-		    <label for="exampleFormControlInput1">Data - Inicio </label>
-		     <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control">
-		  </div>
-		  <div class="form-group">
-		    <label for="exampleFormControlInput1">Data - Final </label>
-		     <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control">
-		  </div>
-		  <button type="button" class="btn btn-block" style="background: #9900ff; color: white;">Cadastrar Tarefa</button>
-
+		  <button type="submit" class="btn btn-block" style="background: #9900ff; color: white;">Cadastrar Tarefa</button>
 		</form>
 	</div>
 
